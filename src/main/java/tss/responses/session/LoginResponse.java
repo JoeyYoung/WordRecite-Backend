@@ -2,9 +2,6 @@ package tss.responses.session;
 
 import org.jetbrains.annotations.Nls;
 
-/**
- * @author yzy
- */
 public class LoginResponse {
     private final String uid;
     private final String token;

@@ -13,9 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
 
-/**
- * @author yzy
- */
+
 @Component
 public class AuthorizationInterceptor extends HandlerInterceptorAdapter {
     private final SqlSessionRepository sqlSessionRepository;

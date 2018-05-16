@@ -13,17 +13,12 @@ import tss.repositories.UserRepository;
 import tss.requests.session.LoginRequest;
 import tss.responses.session.LoginResponse;
 import tss.repositories.SqlSessionRepository;
-import tss.utils.SecurityUtils;
 import tss.utils.SessionUtils;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
-/**
- * @author yzy
- * <p>
- * RESTful APIs for login(creating), log out tokens, etc.
- */
+
 @Controller
 @RequestMapping(path = "/session")
 public class SessionController {
@@ -44,7 +39,7 @@ public class SessionController {
         }
 
         UserEntity user = userRepository.findById(login.getUid()).get();
-        if (!user.getHashedPassword().equals(SecurityUtils.getHashedPasswordByPasswordAndSalt(login.getPassword(), user.getSalt()))) {
+        if (!user.getPassword().equals(login.getPassword())) {
             return new ResponseEntity<>(new LoginResponse("", "", null, "Password incorrect"), HttpStatus.BAD_REQUEST);
         }
 

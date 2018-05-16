@@ -5,9 +5,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.UUID;
 
-/**
- * @author yzy
- */
+
 public class SessionUtils {
     public static @NonNls
     @NotNull String getToken() {

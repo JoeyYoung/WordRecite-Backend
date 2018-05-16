@@ -14,9 +14,6 @@ import tss.entities.UserEntity;
 import tss.repositories.UserRepository;
 import tss.annotations.session.CurrentUser;
 
-/**
- * @author yzy
- */
 @Component
 public class CurrentUserInterceptor implements HandlerMethodArgumentResolver {
     private final UserRepository userRepository;

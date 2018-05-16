@@ -4,9 +4,7 @@ import org.springframework.data.repository.CrudRepository;
 import tss.entities.UserEntity;
 import java.util.List;
 
-/**
- * @author yzy
- */
+
 public interface UserRepository extends CrudRepository<UserEntity, String> {
     /**
      * @param name

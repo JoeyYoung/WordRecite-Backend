@@ -1,8 +1,6 @@
 package tss.requests.session;
 
-/**
- * @author yzy
- */
+
 public class LoginRequest {
     private String uid;
     private String password;

@@ -3,11 +3,7 @@ package tss.entities;
 import javax.persistence.*;
 import java.sql.Timestamp;
 
-/**
- * @author yzy
- * <p>
- * TODO: index not auto created.
- */
+
 @Entity
 @Table(name = "session", indexes = {
         @Index(name = "uidIndex", columnList = "uid", unique = true),

@@ -13,9 +13,7 @@ import tss.repositories.SqlSessionRepository;
 
 import java.util.List;
 
-/**
- * @author yzy
- */
+
 @Configuration
 public class InterceptorConfiguration {
     private final SqlSessionRepository sqlSessionRepository;
