@@ -3,7 +3,7 @@ package tss.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "order")
+@Table(name = "bookorder")
 public class OrderEntity {
     private Long id;
     private Long bookid;

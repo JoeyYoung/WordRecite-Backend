@@ -20,6 +20,7 @@ import tss.repositories.TypeRepository;
 import tss.requests.information.*;
 import tss.responses.information.*;
 
+import javax.swing.text.html.Option;
 import java.util.*;
 
 
@@ -109,7 +110,7 @@ public class BookController {
     /**
      * The login user to unorder a book
      * @param user
-     * @param request book id
+     * @param request
      * @return status
      */
     @PostMapping(path = "/unorder")
@@ -131,7 +132,7 @@ public class BookController {
      * Show the ordered book information for current user
      *
      * @param user
-     * @return
+     * @return ordered book information
      */
     @GetMapping(path = "/userorder")
     @Authorization
