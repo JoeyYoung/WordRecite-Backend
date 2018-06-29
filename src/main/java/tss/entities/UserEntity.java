@@ -27,7 +27,6 @@ public class UserEntity {
 
     private Set<RoleEntity> roles = new HashSet<>();
 
-
     @Column(name = "user_name")
     public String getName() {
         return name;
