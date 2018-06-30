@@ -147,5 +147,4 @@ public class WordController {
         return new ResponseEntity<>(new addWordResponse("add ok", request.getChinese(), request.getEnglish()), HttpStatus.OK);
     }
 
-
 }
